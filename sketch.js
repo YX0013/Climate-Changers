@@ -87,7 +87,7 @@ function setup() {
 function draw() {
   background(parkImg); 
 
-  if(!bgSound.isPlaying()) {
+  if(!bgSound.isPlaying() & !winSound.isPlaying() & !loseSound.isPlaying()) {
     bgSound.loop();
   }
 
