@@ -246,7 +246,7 @@ if(stormCloud.x === 1000) {
   fill("red");
   text("Goal: 50", 1000, 700);
   textSize(20);
-  text("Press left and right arrow keys to move around!", 0, 500);
+  text("Press left and right arrow keys to move around!", 700, 100);
 }
 
 function spawnTrash(){
