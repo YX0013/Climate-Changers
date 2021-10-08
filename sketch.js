@@ -87,7 +87,7 @@ function setup() {
 function draw() {
   background(parkImg); 
 
-  if(!bgSound.isPlaying() & !winSound.isPlaying() & !loseSound.isPlaying()) {
+  if(!bgSound.isPlaying()) {
     bgSound.loop();
   }
 
@@ -202,6 +202,7 @@ if(score === 50) {
   stormCloud.destroy();
   if(!winSound.isPlaying()) {
     winSound.play();
+    bgSound.stop();
   }
 }
 if(stormCloud.x === 1000) {
@@ -212,6 +213,7 @@ if(stormCloud.x === 1000) {
   binGroup.destroyEach();
   if(!loseSound.isPlaying()) {
     loseSound.play();
+    bgSound.stop();
   }
 }
 
