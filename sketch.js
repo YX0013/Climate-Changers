@@ -198,7 +198,6 @@ if(score === 50) {
   textSize(50);
   text("You Win!", 500, 400);
   trashGroup.destroyEach();
-  binGroup.destroyEach();
   stormCloud.destroy();
   if(!winSound.isPlaying()) {
     winSound.play();
@@ -210,7 +209,6 @@ if(stormCloud.x === 1000) {
   textSize(50);
   text("POLLUTED", 500, 400);
   trashGroup.destroyEach();
-  binGroup.destroyEach();
   if(!loseSound.isPlaying()) {
     loseSound.play();
     bgSound.stop();
